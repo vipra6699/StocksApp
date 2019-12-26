@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <AutoCompleteTextView
+        android:id="@+id/auto_complete_edit_text"
+        android:layout_width="255dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginLeft="76dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginBottom="449dp"
+        android:hint="Enter Skock Name"
+        app:layout_constraintBottom_toTopOf="@+id/button1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/symbol"
+        android:layout_width="184dp"
+        android:layout_height="30dp"
+
+        android:layout_marginBottom="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintEnd_toEndOf="@+id/textView11"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/auto_complete_edit_text" />
+
+    <TextView
+        android:id="@+id/high"
+        android:layout_width="184dp"
+        android:layout_height="30dp"
+
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/low"
+        app:layout_constraintEnd_toEndOf="@+id/low"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/low"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/low"
+        android:layout_width="184dp"
+        android:layout_height="30dp"
+
+
+        android:layout_marginBottom="23dp"
+        app:layout_constraintBottom_toTopOf="@+id/price"
+        app:layout_constraintEnd_toEndOf="@+id/price"
+        app:layout_constraintStart_toStartOf="@+id/price"
+        app:layout_constraintTop_toBottomOf="@+id/high" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="184dp"
+        android:layout_height="30dp"
+
+        android:layout_marginBottom="22dp"
+        app:layout_constraintBottom_toTopOf="@+id/volume"
+        app:layout_constraintEnd_toEndOf="@+id/volume"
+        app:layout_constraintStart_toStartOf="@+id/volume"
+        app:layout_constraintTop_toBottomOf="@+id/low" />
+
+    <TextView
+        android:id="@+id/volume"
+        android:layout_width="184dp"
+        android:layout_height="30dp"
+
+        android:layout_marginStart="102dp"
+        android:layout_marginLeft="102dp"
+        android:layout_marginBottom="124dp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/price" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="158dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="127dp"
+        android:text="Graphs"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/auto_complete_edit_text" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="158dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="131dp"
+        android:text="News"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button1"
+        app:layout_constraintTop_toBottomOf="@+id/open" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="184dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/high"
+        app:layout_constraintEnd_toEndOf="@+id/high"
+        app:layout_constraintStart_toStartOf="@+id/high"
+        app:layout_constraintTop_toBottomOf="@+id/symbol" />
+
+    <TextView
+        android:id="@+id/open"
+        android:layout_width="184dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="447dp"
+        android:layout_marginBottom="75dp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="@+id/volume"
+        app:layout_constraintStart_toStartOf="@+id/volume"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
